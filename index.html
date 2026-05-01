@@ -3,70 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebhookLog — Debug Webhooks in Seconds</title>
+  <title>WebhookLog — Secure Webhook Debugger</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-white">
-  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+  <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <div class="inline-block px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm font-bold mb-4">
+      🚀 Now with Secret Key Protection
+    </div>
+    
     <h1 class="text-5xl font-extrabold mb-4 bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">
-      Stop Guessing.<br>Start Logging.
+      Debug Webhooks.<br>Without the Security Nightmare.
     </h1>
-    <p class="text-xl text-slate-300 mb-8">
-      Catch, inspect, and replay webhooks from Stripe, GitHub, Shopify, and any API — 
-      without touching a server.
+    <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+      Catch, inspect, and replay webhooks from Stripe, GitHub, Shopify — 
+      with <strong>military-grade privacy</strong>. Each project is protected with a unique secret key. 
+      No one sees your data but you.
     </p>
     
     <div class="flex justify-center gap-4 mb-12">
-      <a href="https://lyutskan.gumroad.com/l/zlmjto" class="px-8 py-4 bg-orange-500 hover:bg-orange-600 rounded-lg font-bold text-lg transition">
+      <a href="https://lyutskan.gumroad.com/l/zlmjto" class="px-8 py-4 bg-orange-500 hover:bg-orange-600 rounded-lg font-bold text-lg transition shadow-lg shadow-orange-500/25">
         Get Lifetime Access — $19
       </a>
     </div>
 
+    <!-- Trust badges -->
+    <div class="flex justify-center gap-6 mb-16 text-sm text-slate-400">
+      <span class="flex items-center gap-1">🔒 Secret Key Auth</span>
+      <span class="flex items-center gap-1">⚡ Edge-Powered</span>
+      <span class="flex items-center gap-1">🗑️ One-Click Delete</span>
+      <span class="flex items-center gap-1">📊 Live Stats</span>
+    </div>
+
     <div class="grid md:grid-cols-3 gap-6 text-left mb-16">
-      <div class="bg-slate-800 p-6 rounded-xl">
+      <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+        <div class="text-2xl mb-2">🔐</div>
+        <h3 class="font-bold mb-2 text-white">Secret Key Protected</h3>
+        <p class="text-sm text-slate-400">Every project has a unique secret key. Without it, no one can access your dashboard or replay your webhooks.</p>
+      </div>
+      <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
         <div class="text-2xl mb-2">⚡</div>
-        <h3 class="font-bold mb-2">Instant Catch</h3>
-        <p class="text-sm text-slate-400">Unique URL in 1 second. Paste it into Stripe, GitHub, or your app.</p>
+        <h3 class="font-bold mb-2 text-white">Instant Catch & Replay</h3>
+        <p class="text-sm text-slate-400">Unique URL in 1 second. Paste into Stripe, GitHub, or your app. Replay any past webhook with one click.</p>
       </div>
-      <div class="bg-slate-800 p-6 rounded-xl">
-        <div class="text-2xl mb-2">🔍</div>
-        <h3 class="font-bold mb-2">Clear Dashboard</h3>
-        <p class="text-sm text-slate-400">Headers, body, timestamps — all in one clean table.</p>
-      </div>
-      <div class="bg-slate-800 p-6 rounded-xl">
-        <div class="text-2xl mb-2">🔄</div>
-        <h3 class="font-bold mb-2">One-Click Replay</h3>
-        <p class="text-sm text-slate-400">Send any past webhook to your local dev server or a new endpoint.</p>
+      <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+        <div class="text-2xl mb-2">📊</div>
+        <h3 class="font-bold mb-2 text-white">Smart Dashboard</h3>
+        <p class="text-sm text-slate-400">Filter by last 24h or 7 days. Real-time webhook counter. Auto-refresh. Clean, developer-first UI.</p>
       </div>
     </div>
 
-    <div class="bg-slate-800 rounded-xl p-8 text-left">
-      <h2 class="text-2xl font-bold mb-4">Simple Pricing</h2>
-      <div class="flex flex-col md:flex-row gap-4">
-        <div class="flex-1 border border-slate-600 rounded-lg p-4">
+    <!-- Comparison -->
+    <div class="bg-slate-800 rounded-xl p-8 text-left mb-16 border border-slate-700">
+      <h2 class="text-2xl font-bold mb-6 text-center">Why WebhookLog vs. Free Alternatives?</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-slate-600">
+              <th class="p-3 text-left text-slate-300">Feature</th>
+              <th class="p-3 text-center text-slate-300">Webhook.site</th>
+              <th class="p-3 text-center text-slate-300">RequestBin</th>
+              <th class="p-3 text-center text-orange-400 font-bold">WebhookLog</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-400">
+            <tr class="border-b border-slate-700/50">
+              <td class="p-3">Instant Webhook URL</td>
+              <td class="p-3 text-center">✅</td>
+              <td class="p-3 text-center">✅</td>
+              <td class="p-3 text-center text-green-400 font-bold">✅</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="p-3">Replay Webhooks</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center text-green-400 font-bold">✅</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="p-3">Secret Key Protection</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center text-green-400 font-bold">✅</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="p-3">Data Deletion</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center text-green-400 font-bold">✅</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="p-3">Time Filters (24h/7d)</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center">❌</td>
+              <td class="p-3 text-center text-green-400 font-bold">✅</td>
+            </tr>
+            <tr>
+              <td class="p-3">Lifetime Price</td>
+              <td class="p-3 text-center">Free*</td>
+              <td class="p-3 text-center">Free*</td>
+              <td class="p-3 text-center text-orange-400 font-bold">$19</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-xs text-slate-500 mt-2">* Free tiers have public data, no replay, no deletion, and no privacy.</p>
+      </div>
+    </div>
+
+    <div class="bg-slate-800 rounded-xl p-8 text-left border border-slate-700">
+      <h2 class="text-2xl font-bold mb-4 text-center">Simple Pricing</h2>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <div class="flex-1 border border-slate-600 rounded-lg p-4 max-w-xs">
           <div class="text-2xl font-bold text-orange-400">$19</div>
           <div class="text-sm text-slate-400 mb-2">Starter Lifetime</div>
           <ul class="text-sm space-y-1 text-slate-300">
             <li>✓ 1 Project</li>
+            <li>✓ Secret Key Protection</li>
             <li>✓ 7 Day History</li>
             <li>✓ 1,000 webhooks/mo</li>
           </ul>
         </div>
-        <div class="flex-1 border border-orange-500 rounded-lg p-4 relative">
+        <div class="flex-1 border border-orange-500 rounded-lg p-4 max-w-xs relative">
           <div class="absolute -top-3 left-4 bg-orange-500 text-xs font-bold px-2 py-1 rounded">POPULAR</div>
           <div class="text-2xl font-bold text-orange-400">$49</div>
           <div class="text-sm text-slate-400 mb-2">Pro Lifetime</div>
           <ul class="text-sm space-y-1 text-slate-300">
             <li>✓ 5 Projects</li>
+            <li>✓ Secret Key Protection</li>
             <li>✓ 30 Day History</li>
             <li>✓ 10,000 webhooks/mo</li>
           </ul>
         </div>
-        <div class="flex-1 border border-slate-600 rounded-lg p-4">
+        <div class="flex-1 border border-slate-600 rounded-lg p-4 max-w-xs">
           <div class="text-2xl font-bold text-orange-400">$99</div>
           <div class="text-sm text-slate-400 mb-2">Agency Lifetime</div>
           <ul class="text-sm space-y-1 text-slate-300">
             <li>✓ Unlimited Projects</li>
+            <li>✓ Secret Key Protection</li>
             <li>✓ 90 Day History</li>
             <li>✓ Unlimited webhooks</li>
           </ul>
